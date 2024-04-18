@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Shift Information</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .shift-info {
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+      transition: all 0.3s ease; /* Adding transition for smooth hover effect */
+      cursor: pointer; /* Adding cursor pointer */
+    }
+    .shift-info:hover {
+      transform: translateY(-5px); /* Adding translateY effect on hover */
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Changing box shadow on hover */
+    }
+    .shift-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #007bff; /* Blue color for title */
+      margin-bottom: 20px;
+    }
+    .shift-time {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .shift-details {
+      font-size: 1.1rem;
+    }
+    /* Animation for moving the navigation from left to right */
+@keyframes moveFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Animation for moving the content from right to left */
+@keyframes moveFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="shift-info">
+        <h2 class="shift-title">Morning Shift</h2>
+        <p class="shift-time">School Hours: 7:00 AM - 1:00 PM</p>
+        <p class="shift-details">Students attending the morning shift have their classes, followed by a lunch break.</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="shift-info">
+        <h2 class="shift-title">Afternoon Shift</h2>
+        <p class="shift-time">School Hours: 11:00 AM - 5:00 PM</p>
+        <p class="shift-details">Students attending the afternoon shift may have lunch before coming to school, and they may have a short break for snacks during the school day.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

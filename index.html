@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>School website</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand1 logo">
+          <img src="./image/imageco.jpg" alt="logo" class="img-fluid" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./pages/home/home.html"
+                style="cursor: pointer"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="aboutDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+              <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <a class="dropdown-item" href="pages/about/aboutSchool.html"
+                  >About School</a
+                >
+                <a class="dropdown-item" href="pages/about/principal.html"
+                  >Principal</a
+                >
+                <a class="dropdown-item" href="pages/about/coOrdinator.html"
+                  >President</a
+                >
+                <a class="dropdown-item" href="pages/about/vicePresident.html"
+                  >Vice President</a
+                >
+                <a class="dropdown-item" href="pages/about/Secretary.html"
+                  >Secretary</a
+                >
+                <a class="dropdown-item" href="pages/about/teachingStaff.html"
+                  >Teaching Staff</a
+                >
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="ourSchoolDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Our School
+              </a>
+              <div class="dropdown-menu" aria-labelledby="ourSchoolDropdown">
+                <a
+                  class="dropdown-item"
+                  href="pages/ourSchool/guidlineStudent.html"
+                  >Guidline to Student</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="pages/ourSchool/schoolTiming.html"
+                  >School Timing</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="pages/ourSchool/schoolUniform.html"
+                  >School Uniform</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="pages/ourSchool/visitingHour.html"
+                  >Visiting Hours</a
+                >
+                <a class="dropdown-item" href="pages/ourSchool/leaveRule.html"
+                  >Leave Rules</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="pages/ourSchool/schoolfeeFine.html"
+                  >School fees & fine</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/rules/rules.html">Rules</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="facilitiesDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Facilities
+              </a>
+              <div class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                <a
+                  class="dropdown-item"
+                  href="pages/facilities/schoolLibrary.html"
+                  >School Library</a
+                >
+                <a class="dropdown-item" href="pages/facilities/scout.html"
+                  >Scout & Guide</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="pages/facilities/otherFacilities.html"
+                  >Other Facilities</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="pages/admissionEnquiry/admissionEnquiry.html"
+                >Admission Enquiry</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="noticeDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Notice
+              </a>
+              <div class="dropdown-menu" aria-labelledby="noticeDropdown">
+                <a
+                  class="dropdown-item"
+                  href="pages/notice/importantNotice.html"
+                  >important Notice</a
+                >
+                <a class="dropdown-item" href="pages/notice/commonNotice.html"
+                  >Common Notice</a
+                >
+                <a class="dropdown-item" href="pages/notice/parentNotice.html"
+                  >Parent Notice</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contactUs/contactUs.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <div>
+            <a href="pages/login.html">Login</a>
+          </div>
+        </div>
+        <a class="navbar-brand logo">
+          <img
+            style="background-color: #daf510; border-radius: 3.5rem"
+            src="./image/bidya.jpg"
+            alt="logo"
+            class="img-fluid"
+          />
+        </a>
+        <form class="d-flex" id="searchForm">
+          <input
+            id="searchInput"
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            id="searchButton"
+            class="btn btn-outline-danger"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </nav>
+
+      <div class="scroll-text" id="scrollText">
+        <a href="./pages/contactUs/contactUs.html" target="_blank">
+          <span style="color: #2bef3f">[PAY YOUR SCHOOL FEES ONLINE]</span>
+        </a>
+        <a
+          href="./pages/admissionEnquiry/admissionEnquiry.html"
+          target="_blank"
+        >
+          <span style="color: #ff0000"
+            >[ADMISSION OPEN NOW CLICK FOR NEW ADMISSION]</span
+          >
+        </a>
+        <a href="./pages/video/video.html" target="_blank">
+          <span style="color: #5615ed">[CLICK FOR VIDEO GALLERY]</span>
+        </a>
+      </div>
+
+      <script>
+        function navigate() {
+          const pages = {
+            "[PAY YOUR SCHOOL FEES ONLINE]": "./pages/contactUs/contactUs.html",
+            "[ADMISSION OPEN NOW CLICK FOR NEW ADMISSION]":
+              "./pages/contactUs/contactUs.html",
+            "[CLICK FOR VIDEO GALLERY]": "./pages/video/video.html",
+          };
+
+          const currentText = document.getSelection().toString().trim();
+          const url = pages[currentText];
+
+          if (url) {
+            window.location.href = url;
+          }
+        }
+      </script>
+    </header>
+
+    <main class="content" id="searchResults">
+      <div class="flex-container">
+        <div
+          class="first"
+          style="display: inline; justify-content: space-between; gap: 4rem"
+        >
+          <div class="left-background container">
+            <!-- Notice Dropdown -->
+            <div class="dropdown dropright border-left">
+              <a
+                class="btn dropdown-toggle dropdown-item notice text-dark border-0 w-100 text-left"
+                href="#"
+                role="button"
+                id="noticeDropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >ACHIEVEMENTS</a
+              >
+              <div
+                class="dropdown-menu border-box"
+                aria-labelledby="noticeDropdown"
+              >
+                <a
+                  class="dropdown-item notice"
+                  href="../pages/achievement/school.html"
+                  >Achievements in School</a
+                >
+                <a
+                  class="dropdown-item notice"
+                  href="../pages/achievement/pride.html"
+                  >Pride of our School</a
+                >
+                <a
+                  class="dropdown-item notice"
+                  href="../pages/achievement/other.html"
+                  >Other Achievements</a
+                >
+              </div>
+            </div>
+            <!-- Honors and Award -->
+            <div class="border-box">
+              <a
+                class="btn dropdown-item honors-award text-dark border-0 w-100 text-left"
+                href="../pages/visit/Visit.html"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >VISIT/INSPECTION</a
+              >
+            </div>
+            <!-- Award -->
+            <div class="border-box">
+              <a
+                class="btn dropdown-item award text-dark border-0 w-100 text-left"
+                href="../pages/award/Award.html"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >AWARD</a
+              >
+            </div>
+            <div class="border-box">
+              <a
+                class="btn dropdown-item award text-dark border-0 w-100 text-left"
+                href="../pages/photo/photo.html"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >GALLERY</a
+              >
+            </div>
+            <div class="border-box">
+              <a
+                class="btn dropdown-item award text-dark border-0 w-100 text-left"
+                href="../pages/video/video.html"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >VIDEOS</a
+              >
+            </div>
+            <div class="border-box">
+              <a
+                class="btn dropdown-item award text-dark border-0 w-100 text-left"
+                href="../pages/alumini/Alumini.html"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >ALUMINI</a
+              >
+              <div class="dropdown-menu" aria-labelledby="awardDropdown">
+                <!-- Dropdown menu content goes here -->
+              </div>
+            </div>
+          </div>
+
+          <div class="left-backgroundTwo container">
+            <div class="notice-board1">
+              <div class="board1"></div>
+              <div class="notices1">
+                <marquee
+                  direction="up"
+                  scrollamount="1"
+                  onmouseover="this.stop();"
+                  onmouseout="this.start();"
+                >
+                  <div class="notice2">
+                    <a
+                      href="https://example.com"
+                      target="_blank"
+                      onclick="delayedRedirect(event, 'https://example.com')"
+                      >Notice 1: Your notice content ...</a
+                    >
+                  </div>
+                  <div class="notice2">
+                    <a
+                      href="https://example.com"
+                      target="_blank"
+                      onclick="delayedRedirect(event, 'https://example.com')"
+                      >Notice 2: More notices...</a
+                    >
+                  </div>
+                  <div class="notice2">
+                    <a
+                      href="https://example.com"
+                      target="_blank"
+                      onclick="delayedRedirect(event, 'https://example.com')"
+                      >Notice 3: Another notice...</a
+                    >
+                  </div>
+                </marquee>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-container">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://i.ytimg.com/vi/N0iQclQLo68/maxresdefault.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Working on a Script</h5>
+                  <p>Writers brainstorming ideas for their next film script.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Working on a Script</h5>
+                  <p>Writers brainstorming ideas for their next film script.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://img.freepik.com/premium-photo/mind-god-with-view-night-sky-stars-visible_124507-107385.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Working on a Script</h5>
+                  <p>Writers brainstorming ideas for their next film script.</p>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="rightSide"
+          style="
+            display: inline;
+            gap: 1.5rem;
+            justify-content: space-between;
+            width: 330px;
+            margin-top: -17px;
+          "
+        >
+          <div class="main">
+            <div class="right-content"></div>
+            <div class="congratulations-box" id="congratsBox">
+              <div class="congrats-message" style="color: blue">
+                Congratulations!
+              </div>
+              <img
+                class="student-img"
+                id="studentImg"
+                src="https://via.placeholder.com/87x106"
+                alt="Student Image"
+              />
+              <div class="rank-card" id="rankCard">
+                <div class="rank-number" id="rankNumber">4</div>
+                <div class="rank-label">Rank</div>
+              </div>
+              <div class="student-name" id="studentName">
+                CHINMAYA GOURAB PANDA
+              </div>
+              <div class="class-year" id="classYear">CL-V 2016-17</div>
+            </div>
+          </div>
+          <div class="mainTo">
+            <!-- Content for the second rightSide -->
+            <div class="right-content"></div>
+            <div
+              class="overflow-auto"
+              style="
+                max-height: 200px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+              "
+            >
+              <img
+                src="https://transcode-v2.app.engoo.com/image/fetch/f_auto,c_lfill,h_128,dpr_3/https://assets.app.engoo.com/images/1ejRYY8i2K7I3VAtaJKbWm.jpeg"
+                alt="Overflow Image"
+                style="width: 40%; height: auto; margin-top: 1rem"
+              />
+              <p style="color: #daf510">
+                This is some content inside the overflow-auto div. Overflow
+                content allows you to scroll through when there's more content
+                than fits.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <tave>
+        <div class="container mt-4 mb-4">
+          <div class="row divider">
+            <!-- Quick Links Section -->
+            <div class="col-md-3 mt-5">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title" style="text-align: center; color: red">
+                    Quick Links
+                  </h5>
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <a href="http://svsodisha.com"
+                        ><i
+                          class="fa fa-star-of-david"
+                          style="color: #5900ff"
+                        ></i
+                        >&nbsp; Sikhya Bikash Samriti Odisha</a
+                      >
+                    </li>
+
+                    <li class="list-group-item">
+                      <a href="https://vidyabharti.net"
+                        ><i
+                          class="fa fa-star-of-david"
+                          style="color: #5900ff"
+                        ></i
+                        >&nbsp; Vidya Bharati</a
+                      >
+                    </li>
+                    <li class="list-group-item">
+                      <a href="https://odisha.gov.in"
+                        ><i
+                          class="fa fa-star-of-david"
+                          style="color: #5900ff"
+                        ></i
+                        >&nbsp; School and Mess Education Odisha</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Main Content Section -->
+            <div class="col-md-8" style="margin-left: 1rem">
+              <div class="row justify-content-center">
+                <div class="col-md-13 text-center">
+                  <h1 style="font-weight: bold">
+                    <span style="color: #ff0000">WELCOME TO</span>
+                    <span style="color: #0e0808e9">
+                      SARASWATI SISHU VIDYA MANDIR, NILADRI VIHAR</span
+                    >
+                  </h1>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-12">
+                  <div class="schoolPage">
+                    <p>
+                      <b>Saraswati Shishu Vidya Mandir</b> is a unique
+                      institution based on Indian tradition and culture. In all
+                      over India there are approximately 25,000 institutions
+                      running under the guidance of Vidya Bharati. "Shiksha
+                      Vikash Samiti, Odisha" is a registered organization
+                      affiliated with Vidya Bharati. Saraswati Shishu Vidya
+                      Mandir, Niladri Vihar, Bhubaneswar is one of the best
+                      institutions among all 700 institutions running under
+                      Siksha Vikash Samiti. It was established on the day of
+                      Rathayatra, 1993, and working towards the spiritual,
+                      educational development and character building of
+                      child.<br />
+
+                      The school is housed in a magnificent building with a
+                      large playground and well-equipped laboratories, library,
+                      big auditorium, dedicated batika, and computer lab. The
+                      school has a strength of about 1900 students and 76
+                      teachers and about 22 non-teaching staff. It is also
+                      equipped with advanced audio-visual aids. The school
+                      follows the courses and syllabus of Board of Secondary
+                      Education, Odisha and runs classes from Nursery to class-X
+                      with Odia as a medium of instruction.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </tave>
+    </main>
+
+    <footer class="bg-warning" style="height: 10vh">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="text-center p-3 social-icons">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="far fa-envelope"></i
+              ></a>
+              <a class="navbar-brand logo">
+                <img
+                  style="background-color: #daf510; border-radius: 3.5rem"
+                  src="./image/bidya.jpg"
+                  alt="logo"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>© 2024 School Website: All Rights Reserved</p>
+    </footer>
+
+    <!-- Font Awesome CDN for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

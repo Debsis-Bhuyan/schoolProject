@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Award Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: hsl(259, 83%, 50%);
+            margin-bottom: 30px;
+        }
+
+        .award-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .award-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .award-title {
+            font-size: 1.2em;
+            color: #4a90e2;
+            margin-bottom: 8px;
+        }
+
+        .award-description {
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .award-item {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>OUR AWARD</h2>
+
+        <ul class="award-list">
+            <!-- Sample Award Item -->
+            <li class="award-item">
+                <div class="award-info">
+                    <h3 class="award-title">Best School Award</h3>
+                    <p class="award-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed diam eget dolor vestibulum eleifend non nec velit.
+                    </p>
+                </div>
+                <span class="award-icon">🏆</span>
+            </li>
+
+            <!-- Sample Award Item -->
+            <li class="award-item">
+                <div class="award-info">
+                    <h3 class="award-title">Excellence in Education Award</h3>
+                    <p class="award-description">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+                <span class="award-icon">📚</span>
+            </li>
+
+            <!-- Sample Award Item -->
+            <li class="award-item">
+                <div class="award-info">
+                    <h3 class="award-title">Best Teacher Award</h3>
+                    <p class="award-description">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <span class="award-icon">👩‍🏫</span>
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+</html>

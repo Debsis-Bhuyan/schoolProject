@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Notice</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .notice {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .notice-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .heart-container {
+            display: flex;
+            align-items: center;
+        }
+        .heart {
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .heart-count {
+            font-size: 16px;
+            color: #333;
+        }
+        .notice-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .notice-paragraph {
+            color: #333;
+            line-height: 1.6;
+        }
+        .download-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mb-5 mt-5">
+        <!-- Notice 1 -->
+        <div class="notice">
+            <div class="notice-header">
+                <div class="notice-date">April 5, 2024</div>
+                <div class="heart-container">
+                    <div class="heart">&#10084;</div>
+                    <div class="heart-count">0</div>
+                </div>
+            </div>
+            <div class="notice-content">
+                <div class="notice-name">Important Notice Title</div>
+                <div class="notice-paragraph">
+                    This is the content of the notice. It can contain important information that needs to be communicated to everyone.
+                </div>
+                <button class="download-btn" id="downloadPdf1">Download PDF</button>
+            </div>
+        </div>
+
+        <!-- Notice 2 -->
+        <div class="notice">
+            <div class="notice-header">
+                <div class="notice-date">April 4, 2024</div>
+                <div class="heart-container">
+                    <div class="heart">&#10084;</div>
+                    <div class="heart-count">0</div>
+                </div>
+            </div>
+            <div class="notice-content">
+                <div class="notice-name">Another Important Notice</div>
+                <div class="notice-paragraph">
+                    This is another important notice with its content. It is essential to read and understand the information provided.
+                </div>
+                <button class="download-btn" id="downloadPdf2">Download PDF</button>
+            </div>
+        </div>
+        <!-- Add more notices similarly -->
+
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+    <!-- jsPDF Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        function downloadPDF(noticeNumber) {
+            switch (noticeNumber) {
+                case 1:
+                    window.location.href = 'path/to/your/pdf1.pdf';
+                    break;
+                case 2:
+                    window.location.href = 'path/to/your/pdf2.pdf';
+                    break;
+                
+                default:
+                    console.error('Invalid notice number');
+                    break;
+            }
+        }
+
+        const hearts = document.querySelectorAll('.heart');
+        const downloadPdf1 = document.getElementById('downloadPdf1');
+        const downloadPdf2 = document.getElementById('downloadPdf2');
+        // Add more downloadPdf IDs similarly for other notices
+
+        hearts.forEach((heart, index) => {
+            let count = 0;
+            const countDisplay = heart.nextElementSibling;
+            heart.addEventListener('click', () => {
+                count++;
+                countDisplay.textContent = count;
+            });
+        });
+
+        downloadPdf1.addEventListener('click', () => {
+            downloadPDF(1);
+        });
+
+        downloadPdf2.addEventListener('click', () => {
+            downloadPDF(2);
+        });
+        // Add more event listeners similarly for other notices
+    </script>
+</body>
+</html>

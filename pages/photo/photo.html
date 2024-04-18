@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+            color: #333;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .image-item {
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .image-item:hover {
+            transform: scale(1.05);
+        }
+        .image-item img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .image-name {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Image Gallery</h2>
+
+    <div class="container">
+        <div class="image-grid">
+            <div class="image-item" onclick="showImage('https://via.placeholder.com/200')" data-toggle="tooltip" data-placement="top" title="Click to enlarge">
+                <img src="https://via.placeholder.com/200" alt="Image 1">
+                <div class="image-name">Image 1</div>
+            </div>
+            <div class="image-item" onclick="showImage('https://via.placeholder.com/200')" data-toggle="tooltip" data-placement="top" title="Click to enlarge">
+                <img src="https://via.placeholder.com/200" alt="Image 2">
+                <div class="image-name">Image 2</div>
+            </div>
+            <div class="image-item" onclick="showImage('https://via.placeholder.com/200')" data-toggle="tooltip" data-placement="top" title="Click to enlarge">
+                <img src="https://via.placeholder.com/200" alt="Image 3">
+                <div class="image-name">Image 3</div>
+            </div>
+            <div class="image-item" onclick="showImage('https://via.placeholder.com/200')" data-toggle="tooltip" data-placement="top" title="Click to enlarge">
+                <img src="https://via.placeholder.com/200" alt="Image 4">
+                <div class="image-name">Image 4</div>
+            </div>
+            <!-- Add more images with onclick attribute -->
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showImage(src) {
+            var modal = `
+            <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <img src="${src}" class="img-fluid rounded" alt="Enlarged Image">
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+            
+            $('body').append(modal);
+            $('#imageModal').modal('show');
+        }
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+</html>

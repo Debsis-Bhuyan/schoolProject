@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Notice</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container-two {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .notice {
+            color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out forwards;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+        }
+        .notice:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        .notice-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .notice-date {
+            font-size: 14px;
+            color: #fff;
+        }
+        .notice-content {
+            color: #fff;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .notice-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .notice-paragraph {
+            font-size: 16px;
+        }
+        .download-btn {
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #fff;
+            color: #007bff;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-two mb-5 mt-5">
+        <!-- Notice 1 -->
+        <div class="notice" style="background-color: #007bff;">
+            <div class="notice-header">
+                <div class="notice-date">April 5, 2024</div>
+            </div>
+            <div class="notice-content">
+                <div class="notice-name">Important Notice Title</div>
+                <div class="notice-paragraph">
+                    This is the content of the notice. It can contain important information that needs to be communicated to everyone.
+                </div>
+                <button class="download-btn">Download PDF</button>
+            </div>
+        </div>
+        
+        <div class="notice" style="background-color: #007bff;">
+            <div class="notice-header">
+                <div class="notice-date">April 5, 2024</div>
+            </div>
+            <div class="notice-content">
+                <div class="notice-name">Important Notice Title</div>
+                <div class="notice-paragraph">
+                    This is the content of the notice. It can contain important information that needs to be communicated to everyone.
+                </div>
+                <button class="download-btn">Download PDF</button>
+            </div>
+        </div>
+
+        <!-- Notice 2 -->
+        <div class="notice" style="background-color: #007bff;">
+            <div class="notice-header">
+                <div class="notice-date">April 4, 2024</div>
+            </div>
+            <div class="notice-content">
+                <div class="notice-name">Another Important Notice</div>
+                <div class="notice-paragraph">
+                    This is another important notice with its content. It is essential to read and understand the information provided.
+                </div>
+                <button class="download-btn">Download PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const notices = document.querySelectorAll('.notice');
+            notices.forEach(function(notice) {
+                if (isInViewport(notice)) {
+                    notice.style.opacity = '1';
+                }
+            });
+        });
+
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+    </script>
+</body>
+</html>

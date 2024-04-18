@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+/* Animation for moving the navigation from left to right */
+@keyframes moveFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}   
+
+/* Animation for moving the content from right to left */
+@keyframes moveFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Apply animations to the navigation and content */
+.col-md-3 {
+    animation: moveFromLeft 1s forwards;
+}
+
+.col-md-9 {
+    animation: moveFromRight 1s forwards;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid mt-5 mb-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="container">
+                    <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3">
+                        <a class="navbar-brand" href="#">Stewart School, Cuttack</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#history">History</a>
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </nav>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
+                    <h4 id="about">About Stewart School, Cuttack</h4>
+                    <p>
+                        Stewart School, Cuttack has its tell-tale glorious past, soaked in legend. Stewart School, Cuttack was founded in 1882 by the enterprise and generosity of Dr. William Day Stewart, a Civil Surgeon based at Cuttack. In 1910, the school was recognized as a Higher Elementary School by the Inspector of European Schools, Bihar and Odisha. The name of the school was altered to Stewart School, Cuttack, to perpetuate the name of its Founder, Dr. Stewart. In the year 1924 the school was confirmed in the status of Junior Secondary School and the Cambridge Syndicate sanctioned the opening of a centre for Cambridge Examinations in the school. In the year 1974, the school was affiliated to CISCE, New Delhi.
+                    </p>
+                    <h4 id="history">History of Stewart School, Cuttack</h4>
+                    <p>
+                        Insert history content here.
+                    </p>
+                    <h4 id="contact">Contact Stewart School, Cuttack</h4>
+                    <p>
+                        Insert contact information here.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

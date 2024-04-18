@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Gallery</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .video-container {
+            margin-top: 50px;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-item {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .video-name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .video-description {
+            text-align: center;
+            color: #666;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .video-container video {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row video-container">
+
+            <!-- Video Item 1 -->
+            <div class="col-md-6 video-item">
+                <video controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-name">Sample Video 1</div>
+                <div class="video-description">This is a sample video showcasing our school's events.</div>
+            </div>
+
+            <!-- Video Item 2 -->
+            <div class="col-md-6 video-item">
+                <video controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-name">Sample Video 2</div>
+                <div class="video-description">This video highlights our students' achievements in sports.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

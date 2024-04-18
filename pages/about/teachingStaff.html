@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            margin-bottom: 20px; /* Add some bottom margin to create a gap */
+            width: calc(33.33% - 8px); /* Set card width to 33.33% and subtract the gap */
+            margin-right: 4px; /* Add a right margin to create a gap */
+            margin-left: 4px; /* Add a left margin to create a gap */
+            float: left; /* Float the cards to create a grid layout */
+            position: relative; /* Position relative for absolute positioning of elements inside */
+            transition: transform 0.3s; /* Add transition for smooth transform effect */
+        }
+
+        .card:hover {
+            transform: translateY(-10px); /* Move the card 10px up on hover */
+        }
+
+        .card-img-top {
+            height: 200px; /* Set a fixed height for the images */
+            object-fit: cover; /* Ensure the images cover the entire space */
+        }
+
+        .card-title {
+            text-align: center; /* Center align the text */
+            position: absolute; /* Position absolute for centering */
+            top: 50%; /* Place the title at 50% from the top */
+            left: 0; /* Center align horizontally */
+            width: 100%; /* Occupy the entire width */
+            transform: translateY(-50%); /* Move the title up by half its height to center vertically */
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 8px); /* Set card width to 50% on smaller screens */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .card {
+                width: 100%; /* Set card width to 100% on extra small screens */
+            }
+        }
+    </style>
+    <title>School website</title>
+</head>
+<body>
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="card">
+                <img src="https://www.cvexpres.com/teaching-jobs-schools/wp-content/uploads/2021/03/convocatoria-bolsa-docente-maestros-infantil-y-primaria-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Name</h5>
+                    <p class="card-text">Details of the teacher and subject intrested </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.cvexpres.com/teaching-jobs-schools/wp-content/uploads/2021/03/convocatoria-bolsa-docente-maestros-infantil-y-primaria-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Name</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.cvexpres.com/teaching-jobs-schools/wp-content/uploads/2021/03/convocatoria-bolsa-docente-maestros-infantil-y-primaria-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Name</h5>
+                    <p class="card-text">Details of the teacher</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.cvexpres.com/teaching-jobs-schools/wp-content/uploads/2021/03/convocatoria-bolsa-docente-maestros-infantil-y-primaria-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Name</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.cvexpres.com/teaching-jobs-schools/wp-content/uploads/2021/03/convocatoria-bolsa-docente-maestros-infantil-y-primaria-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Name</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.cvexpres.com/teaching-jobs-schools/wp-content/uploads/2021/03/convocatoria-bolsa-docente-maestros-infantil-y-primaria-2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Name</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            <!-- Add more card elements here -->
+            <!-- Other cards -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

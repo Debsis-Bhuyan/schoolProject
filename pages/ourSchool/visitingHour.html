@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom styling for the "School Visiting Hours" section */
+      .custom-visiting-hours {
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #f8f9fa;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease; /* Adding transition for smooth color change */
+        justify-content: center;
+      }
+
+      .custom-visiting-hours:hover {
+        background-color: #15589a; /* Changing background color on hover */
+        color: yellow;
+      }
+
+      .custom-visiting-hours-heading {
+        font-size: 2rem; /* Increasing font size */
+        color: #007bff; /* Changing text color */
+        transition: color 0.3s ease; /* Adding transition for smooth color change */
+      }
+
+      .custom-visiting-hours:hover .custom-visiting-hours-heading {
+        color: #28a745; /* Changing text color on hover */
+      }
+
+      .custom-visiting-hours-text {
+        font-size: 1.1rem; /* Increasing font size */
+        color: #6c757d; /* Changing text color */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mb-5 mt-5">
+      <div class="col-md-6">
+        <div class="custom-visiting-hours">
+          <h1 class="custom-visiting-hours-heading mb-4">
+            School Visiting Hours
+          </h1>
+          <p class="custom-visiting-hours-text mb-3">
+            Monday - Friday: 8:00 AM - 4:00 PM
+          </p>
+          <p class="custom-visiting-hours-text mb-3">
+            Saturday: 9:00 AM - 12:00 PM
+          </p>
+          <p class="custom-visiting-hours-text mb-3">Sunday: Closed</p>
+          <p class="custom-visiting-hours-text">
+            We welcome you to visit our school during these hours. For
+            appointments outside of regular visiting hours, please contact us in
+            advance.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
